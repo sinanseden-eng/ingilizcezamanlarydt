@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İngilizce Zamanlar (Tense) Kapsamlı Rehberi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .strategy-box {
+            background-color: #fefce8; /* yellow-50 */
+            border-left: 4px solid #facc15; /* yellow-400 */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .keyword {
+            background-color: #e0e7ff; /* indigo-100 */
+            color: #4338ca; /* indigo-800 */
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.125rem;
+        }
+        h2 {
+            scroll-margin-top: 2rem;
+        }
+        .example {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ccc;
+        }
+        .wrong-example {
+            color: #dc2626; /* red-600 */
+        }
+        .correct-example {
+            color: #16a34a; /* green-600 */
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 32px;
+            height: 32px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .content-wrapper {
+            transition: max-height 0.5s ease-in-out;
+            overflow: hidden;
+            max-height: 0;
+        }
+        .content-wrapper.open {
+            max-height: 2000px; /* İçeriğin sığacağı kadar büyük bir değer */
+        }
+        .chevron {
+            transition: transform 0.3s ease-in-out;
+        }
+        .chevron.open {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <!-- Başlık -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">İngilizce Zamanlar (Tense) Kapsamlı Rehberi</h1>
+            <p class="mt-4 text-lg text-gray-600">Tüm zamanlar, zaman uyumu kuralları ve sınav stratejileri bir arada.</p>
+        </header>
+
+        <!-- BÖLÜM 1: PRESENT TENSES -->
+        <section id="present-tenses" class="mb-12">
+            <h2 class="section-toggle text-3xl font-bold mb-2 border-l-4 border-blue-500 pl-4 flex justify-between items-center cursor-pointer" data-target="#present-content">
+                <span>Bölüm 1: Present Tenses</span>
+                <svg class="chevron w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </h2>
+            <div id="present-content" class="content-wrapper pl-6">
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Present Simple (Geniş Zaman)</h3>
+                    <p class="mb-4 text-gray-700">Genel doğruları, alışkanlıkları, bilimsel gerçekleri ve planlanmış programları (tren saatleri gibi) anlatmak için kullanılır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> Water <strong class="text-blue-600">boils</strong> at 100 degrees Celsius. (Su 100 derecede kaynar.)</p>
+                    <p class="mb-4"><strong>Örnek:</strong> The train <strong class="text-blue-600">arrives</strong> at 8 PM tomorrow. (Tren yarın akşam 8'de varacak.)</p>
+                    <div><span class="keyword">always</span> <span class="keyword">usually</span> <span class="keyword">every day</span> <span class="keyword">often</span> <span class="keyword">never</span> <span class="keyword">sometimes</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Present Continuous (Şimdiki Zaman)</h3>
+                    <p class="mb-4 text-gray-700">Konuşma anında gerçekleşen, geçici olan veya yakın gelecek için planlanmış eylemleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> Please be quiet, I <strong class="text-blue-600">am working</strong>. (Lütfen sessiz ol, çalışıyorum.)</p>
+                    <p class="mb-4"><strong>Örnek:</strong> She <strong class="text-blue-600">is leaving</strong> for London tomorrow. (Yarın Londra'ya gidiyor.)</p>
+                    <div><span class="keyword">now</span> <span class="keyword">right now</span> <span class="keyword">at the moment</span> <span class="keyword">currently</span> <span class="keyword">these days</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Present Perfect (Yakın Geçmiş Zaman)</h3>
+                    <p class="mb-4 text-gray-700">Geçmişte belirsiz bir zamanda olmuş ve etkisi şu ana devam eden eylemleri veya yaşam tecrübelerini anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> I <strong class="text-blue-600">have lost</strong> my keys. (Anahtarlarımı kaybettim. - Sonuç: Şu an anahtarım yok.)</p>
+                    <p class="mb-4"><strong>Örnek:</strong> She <strong class="text-blue-600">has lived</strong> in Ankara since 2010. (2010'dan beri Ankara'da yaşıyor.)</p>
+                    <div><span class="keyword">since</span> <span class="keyword">for</span> <span class="keyword">already</span> <span class="keyword">yet</span> <span class="keyword">just</span> <span class="keyword">ever</span> <span class="keyword">lately</span> <span class="keyword">recently</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Present Perfect Continuous</h3>
+                    <p class="mb-4 text-gray-700">Geçmişte başlayıp hala devam eden eylemleri veya yeni bitmiş ve gözle görülür bir etkisi olan eylemleri vurgulamak için kullanılır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> I <strong class="text-blue-600">have been waiting</strong> for two hours. (İki saattir bekliyorum.)</p>
+                    <p class="mb-4"><strong>Örnek:</strong> Your eyes are red. <strong class="text-blue-600">Have you been crying</strong>? (Gözlerin kırmızı. Ağlıyor muydun?)</p>
+                    <div><span class="keyword">for</span> <span class="keyword">since</span> <span class="keyword">all day</span> <span class="keyword">lately</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BÖLÜM 2: PAST TENSES -->
+        <section id="past-tenses" class="mb-12">
+            <h2 class="section-toggle text-3xl font-bold mb-2 border-l-4 border-green-500 pl-4 flex justify-between items-center cursor-pointer" data-target="#past-content">
+                <span>Bölüm 2: Past Tenses</span>
+                <svg class="chevron w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </h2>
+            <div id="past-content" class="content-wrapper pl-6">
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Past Simple (Di'li Geçmiş Zaman)</h3>
+                    <p class="mb-4 text-gray-700">Geçmişte belirli bir zamanda başlayıp bitmiş eylemleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> We <strong class="text-green-600">visited</strong> Paris last year. (Geçen yıl Paris'i ziyaret ettik.)</p>
+                    <div><span class="keyword">yesterday</span> <span class="keyword">last week</span> <span class="keyword">in 1990</span> <span class="keyword">ago</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Past Continuous (Geçmişte Süreklilik)</h3>
+                    <p class="mb-4 text-gray-700">Geçmişte belirli bir anda devam etmekte olan veya başka bir eylem tarafından bölünen eylemleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> I <strong class="text-green-600">was watching</strong> TV when you called. (Sen aradığında TV izliyordum.)</p>
+                    <div><span class="keyword">while</span> <span class="keyword">as</span> <span class="keyword">at that time</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Past Perfect (Miş'li Geçmiş Zaman)</h3>
+                    <p class="mb-4 text-gray-700">Geçmişteki bir eylemden daha önce gerçekleşmiş olan eylemi anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> When I arrived, the train <strong class="text-green-600">had already left</strong>. (Ben vardığımda tren çoktan gitmişti.)</p>
+                    <div><span class="keyword">before</span> <span class="keyword">after</span> <span class="keyword">by the time</span> <span class="keyword">already</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Past Perfect Continuous</h3>
+                    <p class="mb-4 text-gray-700">Geçmişteki bir eylemden önce başlayıp o eyleme kadar devam etmiş olan süreci vurgular.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> He was tired because he <strong class="text-green-600">had been working</strong> all day. (Yorgundu çünkü bütün gün çalışmıştı.)</p>
+                    <div><span class="keyword">for</span> <span class="keyword">since</span> <span class="keyword">before</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BÖLÜM 3: FUTURE TENSES -->
+        <section id="future-tenses" class="mb-12">
+            <h2 class="section-toggle text-3xl font-bold mb-2 border-l-4 border-purple-500 pl-4 flex justify-between items-center cursor-pointer" data-target="#future-content">
+                <span>Bölüm 3: Future Tenses</span>
+                <svg class="chevron w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </h2>
+            <div id="future-content" class="content-wrapper pl-6">
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Future Simple (will)</h3>
+                    <p class="mb-4 text-gray-700">Konuşma anında verilen kararları, tahminleri, sözleri ve gelecekteki kesin olayları anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> I think it <strong class="text-purple-600">will rain</strong> tomorrow. (Sanırım yarın yağmur yağacak.)</p>
+                    <div><span class="keyword">tomorrow</span> <span class="keyword">next week</span> <span class="keyword">soon</span> <span class="keyword">in the future</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Be Going To</h3>
+                    <p class="mb-4 text-gray-700">Önceden planlanmış niyetleri ve mevcut kanıtlara dayalı güçlü tahminleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> We <strong class="text-purple-600">are going to move</strong> to Izmir next year. (Gelecek yıl İzmir'e taşınacağız.)</p>
+                    <p class="mb-4"><strong>Örnek:</strong> Look at those dark clouds! It <strong class="text-purple-600">is going to rain</strong>. (Şu kara bulutlara bak! Yağmur yağacak.)</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Future Continuous</h3>
+                    <p class="mb-4 text-gray-700">Gelecekte belirli bir anda devam ediyor olacak eylemleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> This time tomorrow, I <strong class="text-purple-600">will be flying</strong> to Rome. (Yarın bu saatlerde Roma'ya uçuyor olacağım.)</p>
+                    <div><span class="keyword">this time tomorrow</span> <span class="keyword">at 5 PM next Sunday</span></div>
+                </div>
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Future Perfect</h3>
+                    <p class="mb-4 text-gray-700">Gelecekteki belirli bir zamandan önce tamamlanmış olacak eylemleri anlatır.</p>
+                    <p class="mb-2"><strong>Örnek:</strong> By 2030, I <strong class="text-purple-600">will have graduated</strong> from university. (2030'a kadar üniversiteden mezun olmuş olacağım.)</p>
+                    <div><span class="keyword">by</span> <span class="keyword">by the time</span> <span class="keyword">in two years</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BÖLÜM 4: ZAMAN UYUMU VE SINAV STRATEJİLERİ (GÜNCELLENDİ) -->
+        <section id="strategy" class="mb-12">
+            <h2 class="section-toggle text-3xl font-bold mb-2 border-l-4 border-red-500 pl-4 flex justify-between items-center cursor-pointer" data-target="#strategy-content">
+                <span>Bölüm 4: Zaman Uyumu ve Sınav Stratejileri</span>
+                <svg class="chevron w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </h2>
+            <div id="strategy-content" class="content-wrapper pl-6">
+                 <p class="my-6 text-gray-700">YDS gibi sınavlarda tense sorularını çözmenin anahtarı, cümleler arasındaki zaman ilişkisini doğru kurmaktır. Buna **zaman uyumu (sequence of tenses)** denir.</p>
+                 
+                 <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">Temel Kural: Present & Past Uyumu</h3>
+                    <p class="mb-4 text-gray-700">Birleşik bir cümlede, ana cümle hangi gruptaysa yan cümle de genellikle o gruptan bir tense ile devam eder.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Present Grup:</strong> Ana cümle Present veya Future ise, yan cümle de genellikle Present veya Future olur.<br>
+                            <em class="text-gray-600">Örnek: He **knows** that she **will come** tomorrow.</em></li>
+                        <li><strong>Past Grup:</strong> Ana cümle Past ise, yan cümle de genellikle Past olur.<br>
+                            <em class="text-gray-600">Örnek: He **knew** that she **would come** the next day.</em></li>
+                    </ul>
+                </div>
+
+                <div class="strategy-box">
+                    <h4 class="font-semibold text-lg mb-2">Strateji 1: Zaman Bağlaçları (`when`, `while`, `after`, `before`, `as soon as` vb.)</h4>
+                    <p class="mb-2">Zaman bağlaçları **%100 zaman uyumu** ister. Bu en katı kuraldır.</p>
+                    <ul class="list-disc list-inside space-y-3">
+                        <li>`when` + **Present**, **Present / Future**
+                            <div class="example">
+                                <p class="correct-example"><strong>Doğru Örnek 1:</strong> After she **finishes** her work, she **will call** you. (Present -> Future)</p>
+                                <p class="correct-example"><strong>Doğru Örnek 2:</strong> When he **arrives**, we **can start** the meeting. (Present -> Present Modal)</p>
+                                <p class="wrong-example"><strong>Yanlış Örnek:</strong> <del>As soon as he **arrives**, we **started** the meeting.</del> (Present ve Past uyumsuz)</p>
+                            </div>
+                        </li>
+                        <li>`when` + **Past**, **Past**
+                            <div class="example">
+                                <p class="correct-example"><strong>Doğru Örnek 1:</strong> After she **had finished** her work, she **called** you. (Past -> Past)</p>
+                                <p class="correct-example"><strong>Doğru Örnek 2:</strong> While I **was studying**, my brother **was watching** TV. (Past -> Past)</p>
+                                <p class="wrong-example"><strong>Yanlış Örnek:</strong> <del>Before he **came**, I **am preparing** dinner.</del> (Past ve Present uyumsuz)</p>
+                            </div>
+                        </li>
+                        <li><strong>DİKKAT:</strong> Zaman bağlaçlarından sonra `will` veya `would` **KESİNLİKLE KULLANILMAZ!**
+                             <div class="example">
+                                <p class="wrong-example"><strong>Yanlış:</strong> <del>When I will finish, I will call you.</del></p>
+                                <p class="correct-example"><strong>Doğru:</strong> When I **finish**, I **will call** you.</p>
+                                <p class="wrong-example"><strong>Yanlış:</strong> <del>After she would leave, he cleaned the room.</del></p>
+                                <p class="correct-example"><strong>Doğru:</strong> After she **left**, he cleaned the room.</p>
+                            </div>
+                        </li>
+                        <li><strong>ÖZEL DURUM - `since`:** "-den beri" anlamındaki `since` bu kuralı bozar. Yapı genellikle şöyledir: <br> `Present Perfect` + **since** + `Past Simple`
+                            <div class="example">
+                                 <p class="correct-example"><strong>Doğru Örnek 1:</strong> I **have been** much happier since I **moved** to this city.</p>
+                                 <p class="correct-example"><strong>Doğru Örnek 2:</strong> She **hasn't spoken** to him since they **had** that argument.</p>
+                                 <p class="wrong-example"><strong>Yanlış Örnek:</strong> <del>I **was** happier since I **moved** here.</del> (Since'in ana cümlesi genellikle Present Perfect olur.)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="strategy-box">
+                    <h4 class="font-semibold text-lg mb-2">Strateji 2: Noun Clause (`that`, `what`, `whether` vb.)</h4>
+                    <p class="mb-2">Noun Clause'larda zaman uyumu daha esnektir ama yine de bir ana kural vardır:</p>
+                    <ul class="list-disc list-inside space-y-3">
+                        <li>Ana fiil **Past** ise (`He said`, `She thought`), Noun Clause'daki fiil de **Past** olur. Buna "one tense back" (bir zaman geriye gitme) kuralı denir.
+                            <div class="example">
+                                <p class="correct-example"><strong>Doğru Örnek 1:</strong> He **said** that he **would be** late. (`will` -> `would`)</p>
+                                <p class="correct-example"><strong>Doğru Örnek 2:</strong> She **thought** that she **had seen** him before. (`saw` -> `had seen`)</p>
+                                <p class="wrong-example"><strong>Yanlış Örnek:</strong> <del>He **told** me that he **is** busy.</del> (Ana fiil Past iken Noun Clause Present olamaz.)</p>
+                            </div>
+                        </li>
+                        <li><strong>İSTİSNA:** Noun Clause genel geçer bir doğruyu veya bilimsel bir gerçeği anlatıyorsa, ana fiil Past olsa bile Noun Clause **Present** olabilir.
+                            <div class="example">
+                                <p class="correct-example"><strong>Doğru Örnek 1:</strong> The teacher **told** us that the Earth **is** round.</p>
+                                <p class="correct-example"><strong>Doğru Örnek 2:</strong> He **learned** in school that water **boils** at 100 degrees.</p>
+                                <p class="wrong-example"><strong>Yanlış Örnek:</strong> <del>In the 16th century, people didn't know that the Earth **was** round.</del> (Dünya'nın yuvarlak olması hala geçerli bir gerçektir, bu yüzden "is" tercih edilir.)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="font-semibold text-xl mb-2">YDS Tense Soru Çözüm Stratejisi</h3>
+                    <ol class="list-decimal list-inside space-y-3">
+                        <li><strong>Zaman İfadesi Ara:</strong> Cümlede `yesterday`, `in 1990`, `since`, `for`, `next week`, `by 2050` gibi net bir zaman ipucu var mı? Varsa, seçenekleri buna göre ele.</li>
+                        <li><strong>Bağlaçları Kontrol Et:</strong> Cümlede `when`, `while`, `if`, `although`, `because` gibi bir bağlaç var mı? Varsa, **zaman uyumu** kuralını uygula. Present-Past gibi uyumsuz çiftleri hemen ele.</li>
+                        <li><strong>Anlamı Değerlendir:</strong> Cümle genel bir doğrudan mı (`V₁`) bahsediyor, yoksa geçmişte yaşanmış bir hikaye mi (`V₂`) anlatıyor? Bu ayrım çok önemlidir.</li>
+                        <li><strong>Aktif mi Pasif mi?:</strong> Boşluktan sonra bir nesne var mı? Yoksa eylem özne tarafından mı yapılıyor, yoksa özneye mi yapılıyor? Bu, doğru tense'in aktif mi pasif mi olacağını belirler.</li>
+                        <li><strong>Uyumsuz Çiftleri Ele:</strong> Seçeneklerde `had V₃ / has V₃` veya `was Ving / have V₃` gibi bir arada bulunması mantıksız olan zaman çiftlerini eleyerek işini kolaylaştır.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- YENİ BÖLÜM: YAPAY ZEKA İLE ALIŞTIRMA -->
+        <section id="ai-practice">
+            <h2 class="section-toggle text-3xl font-bold mb-2 border-l-4 border-indigo-500 pl-4 flex justify-between items-center cursor-pointer" data-target="#ai-content">
+                <span>Bölüm 5: Yapay Zeka ile Pratik Yap</span>
+                <svg class="chevron w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </h2>
+            <div id="ai-content" class="content-wrapper pl-6">
+                <div class="card mt-6">
+                    <p class="text-center text-gray-700 mb-6">Strateji bilginizi test etmeye hazır mısınız? Gemini sizin için YDS formatında bir soru hazırlayacak. Cevabınızdan sonra anında, açıklamalı geri bildirim alacaksınız.</p>
+                    
+                    <button id="generateBtn" class="w-full bg-indigo-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 flex items-center justify-center text-lg">
+                        Yeni Soru Getir
+                    </button>
+
+                    <div id="quiz-container" class="mt-8 hidden">
+                        <div id="loader" class="loader mx-auto mb-4"></div>
+                        <div id="question-area">
+                            <p id="questionText" class="text-xl text-center mb-6 font-medium"></p>
+                            <div id="options-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                        </div>
+                    </div>
+
+                    <div id="feedback-container" class="mt-6"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Accordion functionality
+        const toggles = document.querySelectorAll('.section-toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.dataset.target;
+                const targetContent = document.querySelector(targetId);
+                const chevron = toggle.querySelector('.chevron');
+
+                targetContent.classList.toggle('open');
+                chevron.classList.toggle('open');
+            });
+        });
+
+        // AI Quiz functionality
+        const generateBtn = document.getElementById('generateBtn');
+        const quizContainer = document.getElementById('quiz-container');
+        const loader = document.getElementById('loader');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('options-container');
+        const feedbackContainer = document.getElementById('feedback-container');
+
+        const strategies = {
+            1: "<strong>Strateji 1: Zaman Bağlaçları.</strong> Zaman bağlaçları (`when`, `after`, `before` vb.) %100 zaman uyumu gerektirir. Cümlenin bir tarafı 'Past' ise diğer tarafı da 'Past' olmalıdır. Cümlenin bir tarafı 'Present/Future' ise diğer tarafı da 'Present/Future' olmalıdır. Bu kuralın tek istisnası '-den beri' anlamındaki 'since' bağlacıdır.",
+            2: "<strong>Strateji 2: Noun Clause Zaman Uyumu.</strong> Ana cümlenin fiili 'Past' ise (`he said`, `it was believed` vb.), `that` ile başlayan yan cümlenin fiili de 'Past' olmalıdır. Bu kuralın tek istisnası, yan cümlenin genel geçer bir doğru veya bilimsel bir gerçek olmasıdır."
+        };
+
+        generateBtn.addEventListener('click', getNewQuestion);
+
+        async function getNewQuestion() {
+            quizContainer.classList.remove('hidden');
+            loader.classList.remove('hidden');
+            questionText.textContent = '';
+            optionsContainer.innerHTML = '';
+            feedbackContainer.innerHTML = '';
+            generateBtn.disabled = true;
+            generateBtn.textContent = 'Yeni Soru Hazırlanıyor...';
+
+            const prompt = `Create a multiple-choice English tense question suitable for a YDS exam. The question must specifically test one of these two tense harmony strategies: 1. Tense harmony with time conjunctions (like when, after, before). 2. Tense harmony in Noun Clauses where the main verb is in the past. Your response MUST be a single, valid JSON object with no extra text or markdown. The JSON object must have these exact keys: "question" (string with '____' for the blank), "options" (array of 4 strings), "correct_answer_index" (number 0-3), "strategy_number" (number 1 or 2), and "explanation" (a brief string in Turkish explaining why the correct answer is correct based on the chosen strategy).`;
+            
+            const generationConfig = {
+                responseMimeType: "application/json",
+                responseSchema: {
+                    type: "OBJECT",
+                    properties: {
+                        "question": { "type": "STRING" },
+                        "options": { "type": "ARRAY", "items": { "type": "STRING" } },
+                        "correct_answer_index": { "type": "NUMBER" },
+                        "strategy_number": { "type": "NUMBER" },
+                        "explanation": { "type": "STRING" }
+                    },
+                    required: ["question", "options", "correct_answer_index", "strategy_number", "explanation"]
+                }
+            };
+
+            try {
+                const quizData = await callGemini(prompt, generationConfig);
+                displayQuestion(quizData);
+            } catch (error) {
+                console.error('Error generating question:', error);
+                questionText.textContent = 'Soru oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.';
+            } finally {
+                loader.classList.add('hidden');
+                generateBtn.disabled = false;
+                generateBtn.textContent = 'Yeni Soru Getir';
+            }
+        }
+
+        function displayQuestion(data) {
+            questionText.textContent = data.question;
+            data.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.className = 'w-full p-3 border border-gray-300 rounded-md text-left hover:bg-gray-100 transition-colors';
+                button.dataset.index = index;
+                button.dataset.correctIndex = data.correct_answer_index;
+                button.dataset.strategy = data.strategy_number;
+                button.dataset.explanation = data.explanation;
+                button.addEventListener('click', checkAnswer);
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        function checkAnswer(event) {
+            const selectedButton = event.target;
+            const selectedIndex = parseInt(selectedButton.dataset.index);
+            const correctIndex = parseInt(selectedButton.dataset.correctIndex);
+            const strategyNumber = selectedButton.dataset.strategy;
+            const explanation = selectedButton.dataset.explanation;
+
+            const allButtons = optionsContainer.querySelectorAll('button');
+            allButtons.forEach(btn => btn.disabled = true);
+
+            if (selectedIndex === correctIndex) {
+                selectedButton.classList.remove('border-gray-300', 'hover:bg-gray-100');
+                selectedButton.classList.add('bg-green-100', 'border-green-500', 'ring-2', 'ring-green-300');
+                feedbackContainer.innerHTML = `<div class="p-4 bg-green-50 border border-green-300 rounded-md"><h4 class="font-bold text-green-800">🎉 Doğru!</h4><p class="mt-2 text-green-700">${explanation}</p></div>`;
+            } else {
+                selectedButton.classList.remove('border-gray-300', 'hover:bg-gray-100');
+                selectedButton.classList.add('bg-red-100', 'border-red-500', 'ring-2', 'ring-red-300');
+                allButtons[correctIndex].classList.add('bg-green-100', 'border-green-500');
+                
+                feedbackContainer.innerHTML = `<div class="p-4 bg-red-50 border border-red-300 rounded-md"><h4 class="font-bold text-red-800">🤔 Yanlış.</h4><p class="mt-2 text-red-700">Bu sorunun çözümü şu stratejiye dayanmaktadır:</p><p class="mt-2 p-3 bg-yellow-50 border border-yellow-200 rounded-md text-yellow-800">${strategies[strategyNumber]}</p><p class="mt-3 text-red-700"><strong>Açıklama:</strong> ${explanation}</p></div>`;
+            }
+        }
+
+        async function callGemini(prompt, generationConfig, retries = 3, delay = 1000) {
+            const apiKey = "AIzaSyAuFtUiTGRQPMPlOXfcLr_tO--VQwLZwZE"; 
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            
+            const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig };
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates[0].content && result.candidates[0].content.parts[0]) {
+                        return JSON.parse(result.candidates[0].content.parts[0].text);
+                    } else {
+                        throw new Error('Invalid response structure from API');
+                    }
+                } catch (error) {
+                    if (i === retries - 1) throw error;
+                    await new Promise(res => setTimeout(res, delay));
+                    delay *= 2;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
